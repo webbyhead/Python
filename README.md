@@ -8,6 +8,8 @@ git add <filename>
 git status
 git commit -m "Comment on file" <filename>
 git push -u urigin master
+git pull --verbose origin master
+  
 
 
 
