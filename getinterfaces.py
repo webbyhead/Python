@@ -1,8 +1,7 @@
 
 # Python script to query Cisco switch running XE IOS
-# Taken from https://www.youtube.com/watch?v=kZ4YqqlU5eM&list=PLhfrWIlLOoKPc2RecyiM_A9nf3fUU3e6g&index=29
 
-
+# Taken from https://www.youtube.com/watch?v=DAajWlVcskw&list=PLhfrWIlLOoKPc2RecyiM_A9nf3fUU3e6g&index=30
 
 
 
@@ -29,8 +28,8 @@ headers = {'Content-Type': 'application/yang-data+json',
 response = requests.get(url, auth=(USER, PASS),
 			headers=headers, verify=False)
 
-print(response.text)
-
+print('Response Text: ' + response.text)
+print('Status Code: ' + str(response.status_code))
 
 
 
